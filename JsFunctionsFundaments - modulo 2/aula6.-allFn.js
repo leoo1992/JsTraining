@@ -15,3 +15,4 @@ const array = [
     result = array.filter(getNotaMaiorQue8).map(getNota).reduce(getMedia);
 //outputs
 console.log(result);
+
