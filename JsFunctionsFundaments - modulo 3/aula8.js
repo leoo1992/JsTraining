@@ -21,6 +21,11 @@ function gerarVariosNumeros() {
     ]);
 };
 
+console.time('Promise');
 
-gerarVariosNumeros().then(numeros => console.log(numeros));
+gerarVariosNumeros()
+    .then(console.log)
+    .then(() => {
+        console.timeEnd('Promise')
+    });
 
